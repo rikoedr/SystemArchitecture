@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonolithicApp", "MonolithicApp\MonolithicApp.csproj", "{6D76ACB6-B95A-488B-A7AB-A8926BE3F60A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroservicesApp", "MicroservicesApp\MicroservicesApp.csproj", "{DD8AC3C2-76D2-462E-943F-4BBE7169421B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{6D76ACB6-B95A-488B-A7AB-A8926BE3F60A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D76ACB6-B95A-488B-A7AB-A8926BE3F60A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D76ACB6-B95A-488B-A7AB-A8926BE3F60A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD8AC3C2-76D2-462E-943F-4BBE7169421B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD8AC3C2-76D2-462E-943F-4BBE7169421B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD8AC3C2-76D2-462E-943F-4BBE7169421B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD8AC3C2-76D2-462E-943F-4BBE7169421B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
