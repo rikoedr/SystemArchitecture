@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MicroservicesApp;
+﻿namespace MicroservicesApp;
 
 public class Util
 {
@@ -27,7 +21,7 @@ public class Util
     public static void PrintList<T>(List<T> list)
     {
         int counter = 1;
-        foreach(T item in list)
+        foreach (T item in list)
         {
             Console.WriteLine(counter + " - " + item.ToString());
             counter += 1;

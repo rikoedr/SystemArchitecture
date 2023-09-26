@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MicroservicesApp.BookLendingService;
+﻿namespace MicroservicesApp.BookLendingService;
 
 public class Lending
 {
@@ -13,7 +7,7 @@ public class Lending
     public string BookTitle { get; set; }
     public string BookISBN { get; set; }
     public string MemberID { get; set; }
-    public string MemberName { get; set; }  
+    public string MemberName { get; set; }
 
     public override string? ToString()
     {

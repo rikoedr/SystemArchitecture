@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MicroservicesApp.MembershipManagementService;
+﻿namespace MicroservicesApp.MembershipManagementService;
 
 public class MembershipServices
 {
@@ -14,7 +8,7 @@ public class MembershipServices
     {
         List<object> result = new List<object>();
 
-        foreach(Member item in members)
+        foreach (Member item in members)
         {
             result.Add(item);
         }
@@ -25,8 +19,8 @@ public class MembershipServices
     public List<string> GetByID(string id)
     {
         int index = members.FindIndex(item => item.ID == id);
-        
-        if(index < 0)
+
+        if (index < 0)
         {
             return new List<string>();
         }
@@ -88,7 +82,7 @@ public class MembershipServices
     public string CreateID()
     {
         string guid = Guid.NewGuid().ToString("N");
-        
+
 
         return guid.Substring(0, 6);
     }

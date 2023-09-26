@@ -1,11 +1,4 @@
-﻿using MicroservicesApp.BooksManagementService;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MicroservicesApp.BooksManagementService;
+﻿namespace MicroservicesApp.BooksManagementService;
 
 public class BooksServices
 {
@@ -40,7 +33,7 @@ public class BooksServices
         };
     }
 
-    
+
 
     public string Add(string isbn, string title, string author)
     {

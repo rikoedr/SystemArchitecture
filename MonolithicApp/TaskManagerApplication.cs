@@ -2,7 +2,7 @@
 
 namespace MonolithicApp;
 
-public class Program
+public class TaskManagerApplication
 {
     public static void Main(string[] args)
     {
@@ -18,7 +18,7 @@ public class Program
             Console.WriteLine("4. Update Task");
             Console.WriteLine("5. Delete Task");
             Console.WriteLine("x  Exit");
-
+            
             Console.Write("Choose menu : ");
             string userInput = Console.ReadLine();
 

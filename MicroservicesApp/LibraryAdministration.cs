@@ -12,7 +12,7 @@ public class LibraryManager
     BooksServices booksServices;
     MembershipServices membershipServices;
     LendingService lendingService;
-    
+
     public static void Main(string[] args)
     {
         LibraryManager libraryManager = new LibraryManager();

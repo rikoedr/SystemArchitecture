@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MonolithicApp.Model;
+﻿namespace MonolithicApp.Model;
 
 public class TaskModel
 {
@@ -19,7 +13,7 @@ public class TaskModel
     {
         TaskEntity task = tasks.Find(item => item.ID == id);
 
-        if(task == null)
+        if (task == null)
         {
             return new TaskEntity
             {
@@ -35,8 +29,8 @@ public class TaskModel
     public bool Delete(int id)
     {
         int taskIndex = tasks.FindIndex(item => item.ID == id);
-        
-        if(taskIndex < 0)
+
+        if (taskIndex < 0)
         {
             return false;
         }

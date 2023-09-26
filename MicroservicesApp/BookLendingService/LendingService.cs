@@ -1,10 +1,5 @@
 ﻿using MicroservicesApp.BooksManagementService;
 using MicroservicesApp.MembershipManagementService;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MicroservicesApp.BookLendingService;
 
@@ -24,7 +19,7 @@ public class LendingService
     {
         List<object> result = new List<object>();
 
-        foreach(Lending item in lendings)
+        foreach (Lending item in lendings)
         {
             result.Add(item);
         }
@@ -36,13 +31,13 @@ public class LendingService
     {
         List<string> member = membershipServices.GetByID(memberID);
         List<string> book = booksServices.GetByID(bookISBN);
-        
-        if(member.Count == 0)
+
+        if (member.Count == 0)
         {
             return "Member not found";
         }
 
-        if(book.Count == 0)
+        if (book.Count == 0)
         {
             return "Book Not Found";
         }
@@ -63,7 +58,7 @@ public class LendingService
     {
         int index = lendings.FindIndex(item => item.ID == id);
 
-        if(index < 0)
+        if (index < 0)
         {
             return "Lending Not Found";
         }

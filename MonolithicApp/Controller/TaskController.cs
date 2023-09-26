@@ -1,10 +1,5 @@
 ﻿using MonolithicApp.Model;
 using MonolithicApp.View;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MonolithicApp.Controller;
 
@@ -48,7 +43,8 @@ public class TaskController
         if (!isDeleted)
         {
             view.Transaction("Failed", "Delete status : ");
-        }else
+        }
+        else
         {
             view.Transaction("Success", "Delete status : ");
         }
@@ -63,10 +59,11 @@ public class TaskController
 
         bool isUpdated = model.Update(id, task, category);
 
-        if(!isUpdated)
+        if (!isUpdated)
         {
             view.Transaction("Failed", "Update status : ");
-        }else
+        }
+        else
         {
             view.Transaction("Success", "Update status : ");
         }

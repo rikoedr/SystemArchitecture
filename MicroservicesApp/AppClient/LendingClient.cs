@@ -1,16 +1,10 @@
 ﻿using MicroservicesApp.BookLendingService;
-using MicroservicesApp.BooksManagementService;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MicroservicesApp.AppClient;
 
 public class LendingClient : AbstractClient
 {
-    
+
     LendingService lendingService;
 
     public LendingClient(LendingService lendingService)

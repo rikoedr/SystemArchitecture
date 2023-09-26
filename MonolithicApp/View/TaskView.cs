@@ -1,9 +1,4 @@
 ﻿using MonolithicApp.Model;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MonolithicApp.View;
 
@@ -13,7 +8,7 @@ public class TaskView
     {
         Console.WriteLine("TASK LIST : ");
 
-        foreach(TaskEntity item in tasks)
+        foreach (TaskEntity item in tasks)
         {
             Console.WriteLine(item.ToString());
         }
@@ -36,7 +31,8 @@ public class TaskView
         Console.WriteLine("");
     }
 
-    public string StringInput(string message) {
+    public string StringInput(string message)
+    {
         Console.Write(message);
         string input = Console.ReadLine();
 

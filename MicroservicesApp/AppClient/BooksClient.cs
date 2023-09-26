@@ -1,16 +1,11 @@
 ﻿using MicroservicesApp.BooksManagementService;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MicroservicesApp.AppClient;
 
 public class BooksClient : AbstractClient
 {
     BooksServices booksService;
-    
+
 
     public BooksClient(BooksServices booksServices)
     {
@@ -85,7 +80,7 @@ public class BooksClient : AbstractClient
     {
         List<object> books = booksService.GetBooks();
 
-        if(books.Count == 0)
+        if (books.Count == 0)
         {
             Console.WriteLine("Books empty!");
         }

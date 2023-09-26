@@ -1,11 +1,4 @@
-﻿using MicroservicesApp.BooksManagementService;
-using MicroservicesApp.MembershipManagementService;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
+﻿using MicroservicesApp.MembershipManagementService;
 
 namespace MicroservicesApp.AppClient;
 
@@ -67,7 +60,7 @@ public class MembershipClient : AbstractClient
     {
         string id = Util.InputString("Insert Member ID : ");
         string transaction = membershipServices.Delete(id);
-        
+
         Console.WriteLine(transaction);
     }
 

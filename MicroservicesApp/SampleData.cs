@@ -1,11 +1,5 @@
-﻿using MicroservicesApp.BookLendingService;
-using MicroservicesApp.BooksManagementService;
+﻿using MicroservicesApp.BooksManagementService;
 using MicroservicesApp.MembershipManagementService;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MicroservicesApp;
 
